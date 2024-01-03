@@ -1,0 +1,48 @@
+nav { 
+  display: none;
+  transition: transform 0.3s ease;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+}
+@media(max-width: 768px) { 
+  nav { 
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+  }
+  nav.hide { 
+    transform: translateX(100%);
+  }
+  nav.show { 
+    transform: translateX(0);
+  }
+  nav .exit {
+    cursor: pointer;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    
+  }
+  nav ul li {
+    margin-top: 1.5rem;
+  }
+  nav ul li a { 
+    color: black;
+    text-decoration: none;
+
+  }
+  nav .touch { 
+    display: block;
+    margin: 4rem auto;
+  }
+}
+

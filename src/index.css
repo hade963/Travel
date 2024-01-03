@@ -1,0 +1,62 @@
+/* ----------Start General styles ---------------*/
+:root { 
+  --primary-color: #DF6951;
+  --secondary-color: #1E1D4C;
+  --section-margin: 10rem;
+}
+body { 
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+* { 
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+}
+html { 
+  scroll-behavior: smooth; 
+}
+img { 
+  max-width: 100%;
+}
+
+ul {
+  list-style: none; 
+}
+.container { 
+  padding-left: 15px; 
+  padding-right: 15px; 
+  margin: 0 auto;
+}
+
+/* small */
+@media (min-width: 768px) { 
+  .container { 
+      width: 750px
+}
+}
+/* medium */
+@media (min-width: 992px) { 
+  .container { 
+      width: 970px ; 
+  }
+}
+/* large*/
+@media (min-width: 1200px) { 
+  .container { 
+      width: 1170px;
+  }
+}
+
+.touch { 
+  background-color:var(--primary-color);
+  color: white;
+  padding: .7rem 2rem;
+  cursor: pointer;
+  border-radius: .2rem;
+  border: none;
+}
+/* ----------End General styles ---------------*/
